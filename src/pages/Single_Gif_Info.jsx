@@ -142,13 +142,13 @@ const Single_Gif_Info = () => {
               </div>
               <div className='flex justify-start gap-4 mt-3 ml-1'>
                 <button onClick={() => addToFav(gif?.id)}>
-                  <MdFavorite className={`${isFavorite ? "text-red-700" : ""}`} size={35} />
+                  <MdFavorite className={`${isFavorite ? "text-red-700" : ""}`} size={28} />
                 </button>
                 <button  onClick={handleShare}>
-                  <FaPaperPlane  size={35} />
+                  <FaPaperPlane  size={28} />
                 </button>
                 <button onClick={handleEmbed}>
-                  <ImEmbed2 size={35} />
+                  <ImEmbed2 size={28} />
                 </button>
               </div>
             </div>
