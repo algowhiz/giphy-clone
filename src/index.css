@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    .gradient{
+        @apply bg-gradient-to-r from-teal-600 via-blue-600 to-pink-600;
+    }
+    .faded-text{
+      @apply font-bold text-sm text-gray-400
+    }
+    .divider{
+      @apply w-full h-0.5 my-6 bg-gray-800
+    }
+}
+
+.category-link {
+    position: relative;
+    display: inline-block;
+    transition: border-bottom 0.3s ease;
+    width: fit-content;
+  }
+  
+  .category-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 3px; 
+    background-color: transparent;
+    transition: background-color 1s ease;
+  }
+  
+  .category-link:hover::after {
+    background-color: rgb(255, 255, 255); /* Adjust to desired color */
+  }
+  
