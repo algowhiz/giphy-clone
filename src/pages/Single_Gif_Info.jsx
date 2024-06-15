@@ -20,7 +20,7 @@ const Single_Gif_Info = () => {
     try {
       const gifId = slug.split('-').pop();
       const { data } = await gf.gif(gifId);
-      const { data: relatedData } = await gf.related(gifId, { limit: 10 });
+      const { data: relatedData } = await gf.related(gifId, { limit: 25 });
       setGif(data);
       setRelatedGif(relatedData);
     } catch (error) {
